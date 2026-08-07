@@ -91,6 +91,16 @@
   table.menu td.price { text-align: right; font-variant-numeric: tabular-nums; color: var(--navy); }
   table.menu td.price.empty { opacity: 0.3; }
 
+  .heading-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 22px; }
+  .heading-row .section-title { margin: 0; }
+  .doodle-people { width: 96px; height: auto; flex: none; opacity: 0.9; }
+  .doodle-spill { width: 46px; height: auto; flex: none; opacity: 0.85; }
+  .doodle-beans { width: 40px; height: auto; flex: none; opacity: 0.85; }
+  .single-label.heading-row { margin-bottom: 0; }
+  @media (max-width: 520px) {
+    .doodle-people { width: 62px; }
+  }
+
   .single-label {
     margin-top: 30px; padding-top: 20px; border-top: 1.5px dashed var(--line);
     font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: 18.5px;
@@ -146,7 +156,10 @@
 <div class="wrap">
 
   <section id="menu">
-    <h2 class="section-title">Menu</h2>
+    <div class="heading-row">
+      <h2 class="section-title">Menu</h2>
+      <img class="doodle-people" src="doodle_people.png" alt="" aria-hidden="true">
+    </div>
     <table class="menu">
       <tr><th></th><th>Simple</th><th>Doble</th></tr>
       <tr><td class="name">Espresso</td><td class="price">$2.500</td><td class="price">$3.000</td></tr>
@@ -164,7 +177,7 @@
       <tr><td class="name">Te Basilur</td><td class="price">$2.000</td></tr>
     </table>
 
-    <div class="single-label">Rolls</div>
+    <div class="single-label heading-row">Rolls<img class="doodle-spill" src="doodle_spill.png" alt="" aria-hidden="true"></div>
     <table class="menu single">
       <tr><td class="name">Rollitos de canela tradicional</td><td class="price">$3.500</td></tr>
       <tr><td class="name">Rollitos de canela con toppings</td><td class="price">$4.500</td></tr>
@@ -173,7 +186,10 @@
   </section>
 
   <section>
-    <h2 class="section-title">Visitanos</h2>
+    <div class="heading-row">
+      <h2 class="section-title">Visitanos</h2>
+      <img class="doodle-beans" src="doodle_beans.png" alt="" aria-hidden="true">
+    </div>
     <div class="info-list">
       <div class="info-row"><div class="k">Direccion</div><div class="v">Los Carrera 534B, Castro, Chiloe</div></div>
       <div class="info-row"><div class="k">Horario</div><div class="v">Lunes a viernes 7:00 - 19:00<br>Sabados 9:30 - 19:00</div></div>
