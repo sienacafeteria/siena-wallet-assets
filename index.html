@@ -95,8 +95,20 @@
   .heading-row .section-title { margin: 0; }
   .doodle-people { width: 96px; height: auto; flex: none; opacity: 0.9; }
   .doodle-spill { width: 46px; height: auto; flex: none; opacity: 0.85; }
-  .doodle-beans { width: 40px; height: auto; flex: none; opacity: 0.85; }
   .single-label.heading-row { margin-bottom: 0; }
+  .beans-cluster { position: relative; width: 130px; height: 78px; flex: none; }
+  .beans-cluster img {
+    position: absolute; width: 58px; height: auto; opacity: 0.85;
+  }
+  .beans-cluster img:nth-child(1) { top: -6px; left: 46px; transform: rotate(-8deg); }
+  .beans-cluster img:nth-child(2) { top: 26px; left: 0px; width: 46px; transform: rotate(18deg); opacity: 0.65; }
+  .beans-cluster img:nth-child(3) { top: 14px; left: 78px; width: 50px; transform: rotate(-25deg); opacity: 0.75; }
+  @media (max-width: 520px) {
+    .beans-cluster { width: 92px; height: 56px; }
+    .beans-cluster img { width: 42px; }
+    .beans-cluster img:nth-child(2) { width: 34px; }
+    .beans-cluster img:nth-child(3) { width: 36px; }
+  }
   @media (max-width: 520px) {
     .doodle-people { width: 62px; }
   }
@@ -188,7 +200,11 @@
   <section>
     <div class="heading-row">
       <h2 class="section-title">Visitanos</h2>
-      <img class="doodle-beans" src="doodle_beans.png" alt="" aria-hidden="true">
+      <div class="beans-cluster" aria-hidden="true">
+        <img src="doodle_beans.png" alt="">
+        <img src="doodle_beans.png" alt="">
+        <img src="doodle_beans.png" alt="">
+      </div>
     </div>
     <div class="info-list">
       <div class="info-row"><div class="k">Direccion</div><div class="v">Los Carrera 534B, Castro, Chiloe</div></div>
