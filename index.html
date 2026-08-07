@@ -87,6 +87,7 @@
     padding: 11px 0; border-top: 1px solid var(--line); font-size: 15.5px;
   }
   table.menu td.name { font-weight: 700; color: var(--ink); }
+  table.menu td.name .desc { display: block; font-weight: 500; font-size: 12px; color: var(--ink); opacity: 0.5; margin-top: 1px; }
   table.menu td.price { text-align: right; font-variant-numeric: tabular-nums; color: var(--navy); }
   table.menu td.price.empty { opacity: 0.3; }
 
@@ -158,8 +159,8 @@
     </table>
     <div class="single-label">Tamano unico</div>
     <table class="menu single">
-      <tr><td class="name">Matcha Latte</td><td class="price">$4.000</td></tr>
-      <tr><td class="name">Butterfly Latte</td><td class="price">$4.000</td></tr>
+      <tr><td class="name">Matcha Latte<span class="desc">Te verde matcha con leche</span></td><td class="price">$4.000</td></tr>
+      <tr><td class="name">Butterfly Latte<span class="desc">Flor de mariposa con leche</span></td><td class="price">$4.000</td></tr>
       <tr><td class="name">Chocolate caliente</td><td class="price">$3.200</td></tr>
       <tr><td class="name">Te Basilur</td><td class="price">$2.000</td></tr>
     </table>
